@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.hungerstrike.model">
+    <class name="MenuItem" table="item">
+        <id name="itemId" column="itemid">
+            <generator class="native"/>
+        </id>
+        <property name="description" column="description" />
+        <property name="menuid" column="menuid" />
+        <property name="preptime" column="preptime" />
+        <property name="price" column="price" />
+        <property name="availability" column="availability" />
+        
+    </class> 
+</hibernate-mapping>
